@@ -1,0 +1,79 @@
+.search-block
+  background: #e7f4f8
+  padding: 40px 0 70px 0 
+  & .search-block-wrap 
+    display: flex 
+    justify-content: space-between
+    align-items: flex-end
+    & .title 
+      & .fas 
+        +solid 
+        font-size: 27px 
+        color: #fb6b45
+        letter-spacing: -.68px 
+      & p 
+        font-size: 18px 
+        color: #859aa1
+        text-transform: uppercase
+        letter-spacing: .45px
+      & h5 
+        +extra 
+        text-transform: uppercase
+        font-size: 30px 
+        color: #556b72
+        letter-spacing: -.75px 
+        line-height: 0.8
+    & .form 
+      & form 
+        display: flex 
+        align-items: center
+        & .input 
+          width: 430px
+          height: 55px
+          & input 
+            width: 100%
+            height: 100%
+            border: 1px solid #dfeef3
+            background: #ffffff
+            padding-left: 25px 
+            letter-spacing: .14px
+            color: #a0a9b6
+            &::placeholder 
+              color: #a0a9b6
+        & .select 
+          width: 165px 
+          height: 55px 
+          margin-left: 10px 
+          position: relative
+          &::before 
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            +solid 
+            right: 15px 
+            font-size: 16px 
+            color: #525e6d
+            z-index: 1
+            display: block 
+          & select 
+            width: 100%
+            height: 100%
+            background: #ffffff
+            border: 1px solid #dfeef3
+            letter-spacing: .14px 
+            color: #a0a9b6
+            padding-left: 25px 
+            appearance: none
+            display: block 
+        & .btn
+          margin-left: 10px  
+          & button 
+            width: 195px 
+            height: 55px
+            background: #ff8261
+            text-transform: uppercase
+            +bold 
+            color: #ffffff
+            letter-spacing: 1.4px 
+
