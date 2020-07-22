@@ -474,6 +474,94 @@ body {
   letter-spacing: 1.4px;
 }
 
+.benefits {
+  padding: 70px 0 115px 0;
+}
+
+.benefits .title {
+  position: relative;
+}
+
+.benefits .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 20px;
+  height: 2px;
+  background: #fb6b45;
+}
+
+.benefits .title h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #859aa1;
+  letter-spacing: .45px;
+}
+
+.benefits .title h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: -.75px;
+  line-height: 31px;
+}
+
+.benefits .benefits-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.benefits .benefits-wrap .block {
+  width: calc(33.3% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+}
+
+.benefits .benefits-wrap .block .icon {
+  min-width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits .benefits-wrap .block .icon .fas {
+  font-family: 'fa-solid-900';
+  font-size: 60px;
+  color: #fb6b45;
+  letter-spacing: 6px;
+}
+
+.benefits .benefits-wrap .block .content {
+  margin-left: 25px;
+}
+
+.benefits .benefits-wrap .block .content h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: .4px;
+}
+
+.benefits .benefits-wrap .block .content p {
+  margin-top: 10px;
+  line-height: 24px;
+  letter-spacing: .14px;
+}
+
 @media screen and (max-width: 1200px) {
   .header .nav .main-menu .first-level {
     padding: 0 10px;
@@ -512,6 +600,12 @@ body {
   .search-block .search-block-wrap .form form .btn {
     margin-left: 0;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .benefits .benefits-wrap .block {
+    width: calc(50% - 30px);
   }
 }
 
@@ -600,6 +694,12 @@ body {
   }
   .header .nav .top-header .first-level.show {
     display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .benefits .benefits-wrap .block {
+    width: 100%;
   }
 }
 
