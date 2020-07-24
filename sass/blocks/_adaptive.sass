@@ -16,6 +16,21 @@
         text-align: center
       & .form 
         margin-top: 50px  
+  .offer
+    & .offer-wrap 
+      flex-direction: column 
+      & .block 
+        margin: auto
+        width: 50%
+      & .right 
+        margin-top: 50px 
+        & .content
+          & .content-wrap  
+            flex-direction: column 
+            justify-content: center
+            align-items: normal
+            & .box 
+              margin-bottom: 20px 
 @media screen and ( max-width: 1020px )
   .search-block
     & .search-block-wrap 
@@ -97,6 +112,11 @@
               +extra 
           &.show 
             display: block 
+@media screen and ( max-width: 770px )
+  .offer
+    & .offer-wrap 
+      & .block 
+        width: 100% 
 @media screen and ( max-width: 700px )
   .benefits
     & .benefits-wrap
@@ -157,6 +177,19 @@
         & form 
           & .input 
             width: 100%
+@media screen and ( max-width: 420px )
+  .offer
+    & .offer-wrap 
+      & .left 
+        & .content
+          & .content-wrap
+            align-items: normal
+            flex-wrap: wrap
+            justify-content: center
+            & .off 
+              margin: 0 15px 
+            & .each 
+              text-align: center 
 @media screen and ( max-width: 400px )
   .header 
     & .nav 

@@ -472,6 +472,13 @@ body {
   font-family: 'OpenSans-Bold';
   color: #ffffff;
   letter-spacing: 1.4px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.search-block .search-block-wrap .form form .btn button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .benefits {
@@ -562,6 +569,183 @@ body {
   letter-spacing: .14px;
 }
 
+.offer {
+  background: #fffbde;
+  padding: 80px 0 115px 0;
+}
+
+.offer .offer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer .offer-wrap .block .title {
+  position: relative;
+}
+
+.offer .offer-wrap .block .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 20px;
+  height: 2px;
+  background: #fb6b45;
+}
+
+.offer .offer-wrap .block .title h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #859aa1;
+  letter-spacing: .45px;
+}
+
+.offer .offer-wrap .block .title h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: -.75px;
+  line-height: 31px;
+}
+
+.offer .offer-wrap .block .content {
+  margin-top: 30px;
+}
+
+.offer .offer-wrap .left {
+  width: calc(40% - 30px);
+}
+
+.offer .offer-wrap .left .content {
+  background: #ffffff;
+  padding: 30px;
+  position: relative;
+}
+
+.offer .offer-wrap .left .content::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #fffbde;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+
+.offer .offer-wrap .left .content h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #97947f;
+  letter-spacing: -.35px;
+}
+
+.offer .offer-wrap .left .content .content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer .offer-wrap .left .content .content-wrap .percent {
+  font-family: 'OpenSans-ExtraBold';
+  font-size: 48px;
+  color: #ff8261;
+  letter-spacing: 1.2px;
+  line-height: 1;
+}
+
+.offer .offer-wrap .left .content .content-wrap .off {
+  text-transform: uppercase;
+  font-family: 'OpenSans-ExtraBold';
+  font-size: 48px;
+  color: #52cbf8;
+  letter-spacing: 1.2px;
+  line-height: 1;
+}
+
+.offer .offer-wrap .left .content .content-wrap .each {
+  text-transform: uppercase;
+  font-family: 'OpenSans-Light';
+  color: #97947f;
+  font-size: 17px;
+  letter-spacing: -.43px;
+}
+
+.offer .offer-wrap .left .content .content-wrap .each span {
+  display: block;
+  font-family: 'OpenSans-ExtraBold';
+  font-size: 17px;
+  color: #4c515b;
+  letter-spacing: .85px;
+}
+
+.offer .offer-wrap .right {
+  width: calc(60% - 30px);
+}
+
+.offer .offer-wrap .right .content .content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer .offer-wrap .right .content .content-wrap .box p {
+  position: relative;
+  color: #696556;
+  letter-spacing: .14px;
+  line-height: 36px;
+  padding-left: 20px;
+}
+
+.offer .offer-wrap .right .content .content-wrap .box p::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  font-family: 'fa-solid-900';
+  font-size: 12px;
+  color: #4c515b;
+  letter-spacing: -.3px;
+}
+
+.offer .offer-wrap .right .content .content-wrap .btn button {
+  text-transform: uppercase;
+  width: 165px;
+  height: 55px;
+  background: #ff8261;
+  color: #ffffff;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 1.4px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.offer .offer-wrap .right .content .content-wrap .btn button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 @media screen and (max-width: 1200px) {
   .header .nav .main-menu .first-level {
     padding: 0 10px;
@@ -583,6 +767,34 @@ body {
   }
   .search-block .search-block-wrap .form {
     margin-top: 50px;
+  }
+  .offer .offer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer .offer-wrap .block {
+    margin: auto;
+    width: 50%;
+  }
+  .offer .offer-wrap .right {
+    margin-top: 50px;
+  }
+  .offer .offer-wrap .right .content .content-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .offer .offer-wrap .right .content .content-wrap .box {
+    margin-bottom: 20px;
   }
 }
 
@@ -697,6 +909,12 @@ body {
   }
 }
 
+@media screen and (max-width: 770px) {
+  .offer .offer-wrap .block {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .benefits .benefits-wrap .block {
     width: 100%;
@@ -789,6 +1007,25 @@ body {
   }
   .search-block .search-block-wrap .form form .input {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .offer .offer-wrap .left .content .content-wrap {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .offer .offer-wrap .left .content .content-wrap .off {
+    margin: 0 15px;
+  }
+  .offer .offer-wrap .left .content .content-wrap .each {
+    text-align: center;
   }
 }
 
