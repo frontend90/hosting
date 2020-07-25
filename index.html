@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hosting</title>
+  <title>Hosting | Home</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/fontawesome_all.css">
   <link rel="stylesheet" href="css/style.css">
@@ -29,11 +29,11 @@
             </div>
             <!-- /.block -->
             <div class="block register">
-              <a href="javascript:;">Register</a>
+              <a href="javascript:;" data-modal="#register">Register</a>
             </div>
             <!-- /.block -->
             <div class="block login">
-              <a href="javascript:;">Login</a>
+              <a href="javascript:;" data-modal="#login">Login</a>
             </div>
             <!-- /.block -->
           </div>
@@ -521,7 +521,68 @@
   <!-- /.footer -->
 
 
-
+  <!-------------    modal window   --------------------->
+  <div class="register-modal modal" id="register">
+    <div class="register-block">
+      <div class="close">
+        <span></span>
+      </div>
+      <!-- /.close -->
+      <h5>registration</h5>
+      <div class="content">
+        <form action="#" method="POST">
+          <div class="input">
+            <input type="text" name="email" placeholder="your email" required>
+          </div>
+          <!-- /.input -->
+          <div class="input">
+            <input type="password" name="password" placeholder="your password" required>
+          </div>
+          <!-- /.input -->
+          <div class="input">
+            <input type="password" name="password" placeholder="repeat your password" required>
+          </div>
+          <!-- /.input -->
+          <div class="btn">
+            <button>create your account</button>
+          </div>
+          <!-- /.btn -->
+        </form>
+      </div>
+      <!-- /.content -->
+      <p>Already have an account? <a href="javascript:;" data-modal="#login">Sign in</a></p>
+    </div>
+    <!-- /.register-block -->
+  </div>
+  <!-- /.register-modal -->
+  <div class="login-modal modal" id="login">
+    <div class="login-block">
+      <div class="close">
+        <span></span>
+      </div>
+      <!-- /.close -->
+      <h5>login</h5>
+      <div class="content">
+        <form action="#" method="POST">
+          <div class="input">
+            <input type="text" name="email" placeholder="your email" required>
+          </div>
+          <!-- /.input -->
+          <div class="input">
+            <input type="password" name="password" placeholder="your password" required>
+          </div>
+          <!-- /.input -->
+          <div class="btn">
+            <button>sign in account</button>
+          </div>
+          <!-- /.btn -->
+        </form>
+      </div>
+      <!-- /.content -->
+    </div>
+    <!-- /.login-block -->
+  </div>
+  <!-- /.login-modal -->
 
 
 

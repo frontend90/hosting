@@ -86,3 +86,28 @@ $('.header-slider').slick({
     }
   }]
 });
+
+/*-------------     modal windows   -------------*/
+$('[data-modal]').click(function () {
+  event.preventDefault();
+
+  let $this = $(this);
+  let modalId = $this.data('modal');
+
+  $(modalId).addClass('show');
+});
+
+$('.close').click(function () {
+  event.preventDefault();
+
+  let $this = $(this);
+  let modalParent = $this.parents('.modal');
+
+  modalParent.removeClass('show');
+});
+
+$('.register-modal p a').click(function () {
+  event.preventDefault();
+
+  $('.register-modal').removeClass('show');
+});
