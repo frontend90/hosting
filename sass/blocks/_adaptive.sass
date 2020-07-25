@@ -49,6 +49,16 @@
       & .block 
         width: calc(50% - 30px)
         margin-top: 30px 
+  .footer
+    & .footer-wrap
+      flex-direction: column 
+      & .block 
+        width: 100%
+      & .logo 
+        justify-content: center
+      & .right 
+        margin-top: 30px 
+        justify-content: space-around
 @media screen and ( max-width: 930px )
   .benefits
     & .benefits-wrap
@@ -127,6 +137,13 @@
         width: 100%
       & .form 
         margin-top: 30px 
+  .footer
+    & .footer-wrap
+      & .right 
+        & .box 
+          width: 100%
+        & .social 
+          text-align: center
 @media screen and ( max-width: 770px )
   .offer
     & .offer-wrap 
@@ -137,6 +154,19 @@
     & .benefits-wrap
       & .block 
         width: 100%
+  .footer
+    & .footer-wrap
+      & .right 
+        flex-direction: column 
+        & .box 
+          text-align: center
+        & .links 
+          & .content-wrap 
+            flex-direction: column 
+        & .contact 
+          margin-top: 30px 
+        & .social 
+          margin-top: 30px 
 @media screen and ( max-width: 660px )
   .header 
     & .nav 
