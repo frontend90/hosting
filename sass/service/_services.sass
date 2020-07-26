@@ -1,0 +1,48 @@
+.services
+  padding: 60px 0 55px 0 
+  & .title 
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: -10px 
+      width: 20px 
+      height: 2px 
+      background: #fb6b45
+    & h6 
+      text-transform: uppercase
+      font-size: 18px 
+      color: #859aa1
+      letter-spacing: .45px 
+    & h4 
+      text-transform: uppercase
+      font-size: 30px 
+      +extra 
+      color: #556b72
+      letter-spacing: -.75px 
+      line-height: 31px 
+  & .services-wrap
+    margin-top: 45px
+    display: flex 
+    justify-content: space-between
+    flex-wrap: wrap
+    & .block 
+      width: calc(33.3% - 30px)
+      margin-bottom: 50px 
+      & .fas 
+        +solid
+        color: #fb6b45
+        font-size: 43px
+      & .content 
+        margin-top: 25px 
+        & h6 
+          text-transform: uppercase
+          font-size: 14px 
+          color: #556b72
+          +extra 
+          letter-spacing: .7px 
+        & p 
+          margin-top: 20px 
+          line-height: 24px 
+          letter-spacing: .14px   

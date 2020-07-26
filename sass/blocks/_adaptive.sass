@@ -1,5 +1,5 @@
 @media screen and ( max-width: 1200px )
-  .header, .header-about
+  .header, .header-about, .header-service
     & .nav 
       & .main-menu 
         & .first-level
@@ -50,6 +50,16 @@
     & .about-team-wrap
       & .block 
         width: calc(33.3% - 30px)
+  .combo
+    & .combo-wrap
+      flex-direction: column 
+      & .block 
+        margin: auto
+        padding: 0
+      & .block:not(.icon)
+        width: 100%
+      & .left 
+        border-right: none 
 @media screen and ( max-width: 1020px )
   .search-block
     & .search-block-wrap 
@@ -89,7 +99,7 @@
       & .block 
         width: 100%
 @media screen and ( max-width: 900px )
-  .header, .header-about
+  .header, .header-about, .header-service
     & .nav 
       & .top-header
         flex-direction: row
@@ -160,6 +170,14 @@
           text-align: center
         & .img 
           margin-top: 30px 
+    & .service-header
+      & .service-header-wrap
+        flex-direction: column 
+        & .block 
+          margin: auto
+          text-align: center
+        & .img 
+          margin-top: 30px 
   .newsletter
     & .newsletter-wrap
       flex-direction: column 
@@ -181,6 +199,20 @@
     & .about-team-wrap
       & .block 
         width: calc(50% - 30px)
+  .services
+    & .services-wrap
+      & .block 
+        width: calc(50% - 30px)
+@media screen and ( max-width: 800px )
+  .service-clients
+    & .service-clients-slider
+      & .slick-list 
+        & .slick-track 
+          & .service-clients-slider-block
+            flex-direction: column 
+            & .block:not(.img)
+              margin-top: 30px 
+              margin-left: 0
 @media screen and ( max-width: 770px )
   .offer
     & .offer-wrap 
@@ -205,7 +237,7 @@
         & .social 
           margin-top: 30px 
 @media screen and ( max-width: 660px )
-  .header, .header-about
+  .header, .header-about, .header-service
     & .nav 
       & .top-header 
         flex-direction: row
@@ -271,6 +303,15 @@
   .login-modal
     & .login-block
       width: 95% 
+  .combo
+    & .combo-wrap
+      & .block 
+        & .content 
+          & .box 
+            flex-direction: column 
+            & .desc 
+              margin-top: 30px 
+              margin-left: 0
 @media screen and ( max-width: 570px )
   .about-team
     & .about-team-wrap
@@ -286,6 +327,10 @@
           width: 100%
         & .img 
           margin-bottom: 10px 
+  .services
+    & .services-wrap
+      & .block 
+        width: 100%
 @media screen and ( max-width: 480px )
   .search-block
     & .search-block-wrap 
@@ -308,7 +353,7 @@
             & .each 
               text-align: center 
 @media screen and ( max-width: 400px )
-  .header, .header-about
+  .header, .header-about, .header-service
     & .nav 
       & .main-menu
         & .registration 
