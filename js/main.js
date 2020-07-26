@@ -1,3 +1,14 @@
+/**********   active menu    *****************/
+$(function () {
+  $('.first-level li a').each(function () {
+    var location = window.location.href;
+    var link = this.href;
+    if (location == link) {
+      $(this).addClass('active');
+    }
+  });
+});
+
 /**********   burger (выпадающие меню-desktop) ****************/
 $(document).ready(function () {
   var _link = $(".first-level").children("li");
