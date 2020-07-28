@@ -64,8 +64,6 @@
         list-style: none 
         & li 
           position: relative
-          width: 100%
-          text-align: center
           & a 
             text-transform: uppercase
             color: #ffffff
@@ -75,7 +73,8 @@
             line-height: 40px
             transition: .3s linear 
             background: #ff8261
-            width: 100%
+            padding: 0 25.2px 
+            white-space: nowrap
             &:hover
               background: #52cbf8
             &.active 
@@ -88,11 +87,11 @@
           top: 40px
           z-index: 20
           display: none 
-          width: 100%
           & li 
             & a 
               white-space: nowrap
               display: inline-block
+              padding: 0 10px 
   & .main-header
     background: #222836
     height: 100%

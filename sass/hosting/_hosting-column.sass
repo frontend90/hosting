@@ -1,0 +1,78 @@
+.hosting-column 
+  padding: 95px 0 100px 0 
+  & .title 
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: -10px 
+      width: 20px 
+      height: 2px 
+      background: #fb6b45
+    & h6 
+      text-transform: uppercase
+      font-size: 18px 
+      color: #859aa1
+      letter-spacing: .45px 
+    & h4 
+      text-transform: uppercase
+      font-size: 30px 
+      +extra 
+      color: #556b72
+      letter-spacing: -.75px 
+      line-height: 31px 
+  & .hosting-column-wrap
+    display: flex 
+    justify-content: space-between
+    margin-top: 30px 
+    flex-wrap: wrap
+    & .block 
+      padding: 30px 65px 
+      text-align: center
+      border: 1px solid #e1eff4
+      width: calc(33.3% - 30px)
+      & .block-title
+        & .price 
+          +light 
+          font-size: 50px 
+          color: #556b72
+          line-height: 40px 
+          & span 
+            +extra 
+        & .date 
+          +semi 
+          text-transform: uppercase
+          color: #556b72
+          letter-spacing: 1.4px 
+          margin-top: 2px 
+        & .plan 
+          text-transform: uppercase
+          margin-top: 25px 
+          background: #52cbf8
+          color: #ffffff
+          +extra 
+          letter-spacing: .7px 
+          padding: 5px 0 
+      & .content 
+        margin-top: 50px 
+        & p 
+          line-height: 40px 
+          color: #8d9198
+          border-bottom: 1px solid #f0f4f7
+          &:last-of-type
+            border-bottom: none 
+        & .btn 
+          margin-top: 10px 
+          & button 
+            text-transform: uppercase
+            background: #ff8261
+            width: 115px 
+            height: 45px 
+            color: #ffffff
+            +bold 
+            font-size: 13px 
+            letter-spacing: 1.3px 
+            transition: .3s linear 
+            &:hover
+              transform: scale(1.05)

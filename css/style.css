@@ -566,6 +566,124 @@ body {
           transform: scale(1.05);
 }
 
+.hosting {
+  padding: 85px 0 115px 0;
+}
+
+.hosting .title {
+  position: relative;
+}
+
+.hosting .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 20px;
+  height: 2px;
+  background: #fb6b45;
+}
+
+.hosting .title h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #859aa1;
+  letter-spacing: .45px;
+}
+
+.hosting .title h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: -.75px;
+  line-height: 31px;
+}
+
+.hosting .hosting-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hosting .hosting-wrap .block {
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #e1eff4;
+  width: calc(25% - 30px);
+}
+
+.hosting .hosting-wrap .block .block-title .price {
+  font-family: 'OpenSans-Light';
+  font-size: 50px;
+  color: #556b72;
+  line-height: 40px;
+}
+
+.hosting .hosting-wrap .block .block-title .price span {
+  font-family: 'OpenSans-ExtraBold';
+}
+
+.hosting .hosting-wrap .block .block-title .date {
+  font-family: 'OpenSans-Semibold';
+  text-transform: uppercase;
+  color: #556b72;
+  letter-spacing: 1.4px;
+  margin-top: 2px;
+}
+
+.hosting .hosting-wrap .block .block-title .plan {
+  text-transform: uppercase;
+  margin-top: 25px;
+  background: #52cbf8;
+  color: #ffffff;
+  font-family: 'OpenSans-ExtraBold';
+  letter-spacing: .7px;
+  padding: 5px 0;
+}
+
+.hosting .hosting-wrap .block .content {
+  margin-top: 50px;
+}
+
+.hosting .hosting-wrap .block .content p {
+  line-height: 40px;
+  color: #8d9198;
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.hosting .hosting-wrap .block .content p:last-of-type {
+  border-bottom: none;
+}
+
+.hosting .hosting-wrap .block .content .btn {
+  margin-top: 10px;
+}
+
+.hosting .hosting-wrap .block .content .btn button {
+  text-transform: uppercase;
+  background: #ff8261;
+  width: 115px;
+  height: 45px;
+  color: #ffffff;
+  font-family: 'OpenSans-Bold';
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.hosting .hosting-wrap .block .content .btn button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .header {
   height: 100vh;
 }
@@ -698,8 +816,6 @@ body {
 
 .header .nav .main-menu .first-level li {
   position: relative;
-  width: 100%;
-  text-align: center;
 }
 
 .header .nav .main-menu .first-level li a {
@@ -712,7 +828,8 @@ body {
   -webkit-transition: .3s linear;
   transition: .3s linear;
   background: #ff8261;
-  width: 100%;
+  padding: 0 25.2px;
+  white-space: nowrap;
 }
 
 .header .nav .main-menu .first-level li a:hover {
@@ -731,12 +848,12 @@ body {
   top: 40px;
   z-index: 20;
   display: none;
-  width: 100%;
 }
 
 .header .nav .main-menu .first-level .second-level li a {
   white-space: nowrap;
   display: inline-block;
+  padding: 0 10px;
 }
 
 .header .main-header {
@@ -1271,124 +1388,6 @@ body {
           transform: scale(1.05);
 }
 
-.hosting {
-  padding: 85px 0 115px 0;
-}
-
-.hosting .title {
-  position: relative;
-}
-
-.hosting .title::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -10px;
-  width: 20px;
-  height: 2px;
-  background: #fb6b45;
-}
-
-.hosting .title h6 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #859aa1;
-  letter-spacing: .45px;
-}
-
-.hosting .title h4 {
-  text-transform: uppercase;
-  font-size: 30px;
-  font-family: 'OpenSans-ExtraBold';
-  color: #556b72;
-  letter-spacing: -.75px;
-  line-height: 31px;
-}
-
-.hosting .hosting-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.hosting .hosting-wrap .block {
-  padding: 25px;
-  text-align: center;
-  border: 1px solid #e1eff4;
-  width: calc(25% - 30px);
-}
-
-.hosting .hosting-wrap .block .block-title .price {
-  font-family: 'OpenSans-Light';
-  font-size: 50px;
-  color: #556b72;
-  line-height: 40px;
-}
-
-.hosting .hosting-wrap .block .block-title .price span {
-  font-family: 'OpenSans-ExtraBold';
-}
-
-.hosting .hosting-wrap .block .block-title .date {
-  font-family: 'OpenSans-Semibold';
-  text-transform: uppercase;
-  color: #556b72;
-  letter-spacing: 1.4px;
-  margin-top: 2px;
-}
-
-.hosting .hosting-wrap .block .block-title .plan {
-  text-transform: uppercase;
-  margin-top: 25px;
-  background: #52cbf8;
-  color: #ffffff;
-  font-family: 'OpenSans-ExtraBold';
-  letter-spacing: .7px;
-  padding: 5px 0;
-}
-
-.hosting .hosting-wrap .block .content {
-  margin-top: 50px;
-}
-
-.hosting .hosting-wrap .block .content p {
-  line-height: 40px;
-  color: #8d9198;
-  border-bottom: 1px solid #f0f4f7;
-}
-
-.hosting .hosting-wrap .block .content p:last-of-type {
-  border-bottom: none;
-}
-
-.hosting .hosting-wrap .block .content .btn {
-  margin-top: 10px;
-}
-
-.hosting .hosting-wrap .block .content .btn button {
-  text-transform: uppercase;
-  background: #ff8261;
-  width: 115px;
-  height: 45px;
-  color: #ffffff;
-  font-family: 'OpenSans-Bold';
-  font-size: 13px;
-  letter-spacing: 1.3px;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
-}
-
-.hosting .hosting-wrap .block .content .btn button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
 .header-about .nav .top-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1530,7 +1529,8 @@ body {
   -webkit-transition: .3s linear;
   transition: .3s linear;
   background: #ff8261;
-  padding: 0 25px;
+  padding: 0 25.2px;
+  white-space: nowrap;
 }
 
 .header-about .nav .main-menu .first-level li a:hover {
@@ -1593,6 +1593,11 @@ body {
   font-family: 'OpenSans-ExtraBold';
   color: #9aaeb7;
   margin-left: 315px;
+}
+
+.header-about .about-header .about-header-wrap .img img {
+  display: block;
+  width: 100%;
 }
 
 .about-details {
@@ -2088,7 +2093,8 @@ body {
   -webkit-transition: .3s linear;
   transition: .3s linear;
   background: #ff8261;
-  padding: 0 25px;
+  padding: 0 25.2px;
+  white-space: nowrap;
 }
 
 .header-service .nav .main-menu .first-level li a:hover {
@@ -2527,11 +2533,437 @@ body {
   border-color: #52cbf8;
 }
 
+.header-hosting .nav .top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.header-hosting .nav .top-header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-hosting .nav .top-header .logo img {
+  width: 100%;
+}
+
+.header-hosting .nav .top-header .logo h2 {
+  text-transform: uppercase;
+  margin-left: 10px;
+  font-family: 'OpenSans-ExtraBold';
+  font-size: 20px;
+  color: #161920;
+  letter-spacing: -0.1px;
+}
+
+.header-hosting .nav .top-header .registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #e1e9f2;
+  border-bottom: 1px solid #e1e9f2;
+  padding: 10px 0;
+}
+
+.header-hosting .nav .top-header .registration .support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1px solid #e1e9f2;
+  padding-right: 10px;
+}
+
+.header-hosting .nav .top-header .registration .support h5 {
+  letter-spacing: .14px;
+  color: #484e57;
+}
+
+.header-hosting .nav .top-header .registration .support form {
+  margin-left: 5px;
+  width: 160px;
+}
+
+.header-hosting .nav .top-header .registration .support form input {
+  color: #9ba4b0;
+  width: 100%;
+  padding-left: 0px;
+}
+
+.header-hosting .nav .top-header .registration .support form input::-webkit-input-placeholder {
+  color: #9ba4b0;
+}
+
+.header-hosting .nav .top-header .registration .support form input:-ms-input-placeholder {
+  color: #9ba4b0;
+}
+
+.header-hosting .nav .top-header .registration .support form input::-ms-input-placeholder {
+  color: #9ba4b0;
+}
+
+.header-hosting .nav .top-header .registration .support form input::placeholder {
+  color: #9ba4b0;
+}
+
+.header-hosting .nav .top-header .registration .register {
+  margin-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #e1e9f2;
+}
+
+.header-hosting .nav .top-header .registration .register a {
+  color: #9ba4b0;
+  letter-spacing: .14px;
+  display: inline-block;
+}
+
+.header-hosting .nav .top-header .registration .login {
+  margin-left: 10px;
+}
+
+.header-hosting .nav .top-header .registration .login a {
+  color: #9ba4b0;
+  letter-spacing: .14px;
+  display: inline-block;
+}
+
+.header-hosting .nav .main-menu .burger {
+  display: none;
+}
+
+.header-hosting .nav .main-menu .first-level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  background: #ff8261;
+}
+
+.header-hosting .nav .main-menu .first-level li {
+  position: relative;
+}
+
+.header-hosting .nav .main-menu .first-level li a {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 1.04px;
+  display: inline-block;
+  line-height: 40px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  background: #ff8261;
+  padding: 0 25.2px;
+  white-space: nowrap;
+}
+
+.header-hosting .nav .main-menu .first-level li a:hover {
+  background: #52cbf8;
+}
+
+.header-hosting .nav .main-menu .first-level li a.active {
+  background: #52cbf8;
+}
+
+.header-hosting .nav .main-menu .first-level .second-level {
+  list-style: none;
+  position: absolute;
+  background: #ff8261;
+  left: 0;
+  top: 40px;
+  z-index: 20;
+  display: none;
+}
+
+.header-hosting .nav .main-menu .first-level .second-level li a {
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.header-hosting .hosting-header {
+  background: #222836;
+  padding: 100px 0;
+}
+
+.header-hosting .hosting-header .hosting-header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-hosting .hosting-header .hosting-header-wrap .block h4 {
+  text-transform: uppercase;
+  font-family: 'OpenSans-ExtraBold';
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.header-hosting .hosting-header .hosting-header-wrap .block h6 {
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1.9px;
+  font-size: 20px;
+  font-family: 'OpenSans-Light';
+}
+
+.header-hosting .hosting-header .hosting-header-wrap .img {
+  text-transform: uppercase;
+  font-family: 'OpenSans-ExtraBold';
+  color: #9aaeb7;
+  margin-left: 315px;
+}
+
+.hosting-steps {
+  padding: 60px 0 100px 0;
+}
+
+.hosting-steps .title {
+  position: relative;
+}
+
+.hosting-steps .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 20px;
+  height: 2px;
+  background: #fb6b45;
+}
+
+.hosting-steps .title h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-size-color: #859aa1;
+  font-size-letter-spacing: .45px;
+}
+
+.hosting-steps .title h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: -.75px;
+  line-height: 31px;
+}
+
+.hosting-steps .hosting-steps-wrap {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hosting-steps .hosting-steps-wrap .block {
+  width: calc(33.3% - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hosting-steps .hosting-steps-wrap .block .icon {
+  background: #fb6b45;
+  min-width: 68px;
+  height: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hosting-steps .hosting-steps-wrap .block .icon span {
+  color: #ffffff;
+  font-family: 'OpenSans-ExtraBold';
+  font-size: 30px;
+  letter-spacing: -.75px;
+}
+
+.hosting-steps .hosting-steps-wrap .block .content {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.hosting-steps .hosting-steps-wrap .block .content h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: .7px;
+}
+
+.hosting-steps .hosting-steps-wrap .block .content p {
+  margin-top: 10px;
+  line-height: 24px;
+  letter-spacing: .14px;
+}
+
+.hosting-block {
+  background: #e7f4f8;
+}
+
+.hosting-block .hosting-wrap .block {
+  background: #ffffff;
+  border: none;
+}
+
+.hosting-column {
+  padding: 95px 0 100px 0;
+}
+
+.hosting-column .title {
+  position: relative;
+}
+
+.hosting-column .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 20px;
+  height: 2px;
+  background: #fb6b45;
+}
+
+.hosting-column .title h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #859aa1;
+  letter-spacing: .45px;
+}
+
+.hosting-column .title h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: -.75px;
+  line-height: 31px;
+}
+
+.hosting-column .hosting-column-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hosting-column .hosting-column-wrap .block {
+  padding: 30px 65px;
+  text-align: center;
+  border: 1px solid #e1eff4;
+  width: calc(33.3% - 30px);
+}
+
+.hosting-column .hosting-column-wrap .block .block-title .price {
+  font-family: 'OpenSans-Light';
+  font-size: 50px;
+  color: #556b72;
+  line-height: 40px;
+}
+
+.hosting-column .hosting-column-wrap .block .block-title .price span {
+  font-family: 'OpenSans-ExtraBold';
+}
+
+.hosting-column .hosting-column-wrap .block .block-title .date {
+  font-family: 'OpenSans-Semibold';
+  text-transform: uppercase;
+  color: #556b72;
+  letter-spacing: 1.4px;
+  margin-top: 2px;
+}
+
+.hosting-column .hosting-column-wrap .block .block-title .plan {
+  text-transform: uppercase;
+  margin-top: 25px;
+  background: #52cbf8;
+  color: #ffffff;
+  font-family: 'OpenSans-ExtraBold';
+  letter-spacing: .7px;
+  padding: 5px 0;
+}
+
+.hosting-column .hosting-column-wrap .block .content {
+  margin-top: 50px;
+}
+
+.hosting-column .hosting-column-wrap .block .content p {
+  line-height: 40px;
+  color: #8d9198;
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.hosting-column .hosting-column-wrap .block .content p:last-of-type {
+  border-bottom: none;
+}
+
+.hosting-column .hosting-column-wrap .block .content .btn {
+  margin-top: 10px;
+}
+
+.hosting-column .hosting-column-wrap .block .content .btn button {
+  text-transform: uppercase;
+  background: #ff8261;
+  width: 115px;
+  height: 45px;
+  color: #ffffff;
+  font-family: 'OpenSans-Bold';
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.hosting-column .hosting-column-wrap .block .content .btn button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 @media screen and (max-width: 1200px) {
-  .header .nav .main-menu .first-level, .header-about .nav .main-menu .first-level, .header-service .nav .main-menu .first-level {
+  .header .nav .main-menu .first-level, .header-about .nav .main-menu .first-level, .header-service .nav .main-menu .first-level, .header-hosting .nav .main-menu .first-level {
     padding: 0 10px;
   }
-  .header .nav .main-menu .first-level li a, .header-about .nav .main-menu .first-level li a, .header-service .nav .main-menu .first-level li a {
+  .header .nav .main-menu .first-level li a, .header-about .nav .main-menu .first-level li a, .header-service .nav .main-menu .first-level li a, .header-hosting .nav .main-menu .first-level li a {
     padding: 0;
   }
   .search-block .search-block-wrap {
@@ -2662,6 +3094,22 @@ body {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .hosting-steps .hosting-steps-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .hosting-steps .hosting-steps-wrap .block {
+    width: calc(50% - 30px);
+    margin-top: 30px;
+  }
+  .hosting-column .hosting-column-wrap {
+    margin-top: 0;
+  }
+  .hosting-column .hosting-column-wrap .block {
+    width: calc(50% - 30px);
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 930px) {
@@ -2680,13 +3128,13 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .header .nav .top-header, .header-about .nav .top-header, .header-service .nav .top-header {
+  .header .nav .top-header, .header-about .nav .top-header, .header-service .nav .top-header, .header-hosting .nav .top-header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .header .nav .top-header .burger, .header-about .nav .top-header .burger, .header-service .nav .top-header .burger {
+  .header .nav .top-header .burger, .header-about .nav .top-header .burger, .header-service .nav .top-header .burger, .header-hosting .nav .top-header .burger {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2702,26 +3150,26 @@ body {
     cursor: pointer;
     z-index: 9999;
   }
-  .header .nav .top-header .burger.active span, .header-about .nav .top-header .burger.active span, .header-service .nav .top-header .burger.active span {
+  .header .nav .top-header .burger.active span, .header-about .nav .top-header .burger.active span, .header-service .nav .top-header .burger.active span, .header-hosting .nav .top-header .burger.active span {
     display: none;
   }
-  .header .nav .top-header .burger.active::before, .header-about .nav .top-header .burger.active::before, .header-service .nav .top-header .burger.active::before {
+  .header .nav .top-header .burger.active::before, .header-about .nav .top-header .burger.active::before, .header-service .nav .top-header .burger.active::before, .header-hosting .nav .top-header .burger.active::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-  .header .nav .top-header .burger.active::after, .header-about .nav .top-header .burger.active::after, .header-service .nav .top-header .burger.active::after {
+  .header .nav .top-header .burger.active::after, .header-about .nav .top-header .burger.active::after, .header-service .nav .top-header .burger.active::after, .header-hosting .nav .top-header .burger.active::after {
     top: 0;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
-  .header .nav .top-header .burger span, .header-about .nav .top-header .burger span, .header-service .nav .top-header .burger span {
+  .header .nav .top-header .burger span, .header-about .nav .top-header .burger span, .header-service .nav .top-header .burger span, .header-hosting .nav .top-header .burger span {
     background: #000000;
     height: 3px;
     width: 20px;
     -webkit-transition: .3s linear;
     transition: .3s linear;
   }
-  .header .nav .top-header .burger::before, .header-about .nav .top-header .burger::before, .header-service .nav .top-header .burger::before {
+  .header .nav .top-header .burger::before, .header-about .nav .top-header .burger::before, .header-service .nav .top-header .burger::before, .header-hosting .nav .top-header .burger::before {
     content: '';
     position: absolute;
     width: 30px;
@@ -2731,7 +3179,7 @@ body {
     -webkit-transition: .3s linear;
     transition: .3s linear;
   }
-  .header .nav .top-header .burger::after, .header-about .nav .top-header .burger::after, .header-service .nav .top-header .burger::after {
+  .header .nav .top-header .burger::after, .header-about .nav .top-header .burger::after, .header-service .nav .top-header .burger::after, .header-hosting .nav .top-header .burger::after {
     content: '';
     position: absolute;
     width: 30px;
@@ -2741,7 +3189,7 @@ body {
     -webkit-transition: .3s linear;
     transition: .3s linear;
   }
-  .header .nav .top-header .first-level, .header-about .nav .top-header .first-level, .header-service .nav .top-header .first-level {
+  .header .nav .top-header .first-level, .header-about .nav .top-header .first-level, .header-service .nav .top-header .first-level, .header-hosting .nav .top-header .first-level {
     position: fixed;
     top: 0;
     left: 0;
@@ -2753,7 +3201,7 @@ body {
     text-align: center;
     padding-top: 30px;
   }
-  .header .nav .top-header .first-level li a, .header-about .nav .top-header .first-level li a, .header-service .nav .top-header .first-level li a {
+  .header .nav .top-header .first-level li a, .header-about .nav .top-header .first-level li a, .header-service .nav .top-header .first-level li a, .header-hosting .nav .top-header .first-level li a {
     display: block;
     margin: 25px 0;
     text-transform: uppercase;
@@ -2762,33 +3210,46 @@ body {
     letter-spacing: 1.04px;
     font-family: 'OpenSans-ExtraBold';
   }
-  .header .nav .top-header .first-level.show, .header-about .nav .top-header .first-level.show, .header-service .nav .top-header .first-level.show {
+  .header .nav .top-header .first-level.show, .header-about .nav .top-header .first-level.show, .header-service .nav .top-header .first-level.show, .header-hosting .nav .top-header .first-level.show {
     display: block;
   }
-  .header .about-header .about-header-wrap, .header-about .about-header .about-header-wrap, .header-service .about-header .about-header-wrap {
+  .header .about-header .about-header-wrap, .header-about .about-header .about-header-wrap, .header-service .about-header .about-header-wrap, .header-hosting .about-header .about-header-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header .about-header .about-header-wrap .block, .header-about .about-header .about-header-wrap .block, .header-service .about-header .about-header-wrap .block {
+  .header .about-header .about-header-wrap .block, .header-about .about-header .about-header-wrap .block, .header-service .about-header .about-header-wrap .block, .header-hosting .about-header .about-header-wrap .block {
     margin: auto;
     text-align: center;
   }
-  .header .about-header .about-header-wrap .img, .header-about .about-header .about-header-wrap .img, .header-service .about-header .about-header-wrap .img {
+  .header .about-header .about-header-wrap .img, .header-about .about-header .about-header-wrap .img, .header-service .about-header .about-header-wrap .img, .header-hosting .about-header .about-header-wrap .img {
     margin-top: 30px;
   }
-  .header .service-header .service-header-wrap, .header-about .service-header .service-header-wrap, .header-service .service-header .service-header-wrap {
+  .header .service-header .service-header-wrap, .header-about .service-header .service-header-wrap, .header-service .service-header .service-header-wrap, .header-hosting .service-header .service-header-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header .service-header .service-header-wrap .block, .header-about .service-header .service-header-wrap .block, .header-service .service-header .service-header-wrap .block {
+  .header .service-header .service-header-wrap .block, .header-about .service-header .service-header-wrap .block, .header-service .service-header .service-header-wrap .block, .header-hosting .service-header .service-header-wrap .block {
     margin: auto;
     text-align: center;
   }
-  .header .service-header .service-header-wrap .img, .header-about .service-header .service-header-wrap .img, .header-service .service-header .service-header-wrap .img {
+  .header .service-header .service-header-wrap .img, .header-about .service-header .service-header-wrap .img, .header-service .service-header .service-header-wrap .img, .header-hosting .service-header .service-header-wrap .img {
+    margin-top: 30px;
+  }
+  .header .hosting-header .hosting-header-wrap, .header-about .hosting-header .hosting-header-wrap, .header-service .hosting-header .hosting-header-wrap, .header-hosting .hosting-header .hosting-header-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .hosting-header .hosting-header-wrap .block, .header-about .hosting-header .hosting-header-wrap .block, .header-service .hosting-header .hosting-header-wrap .block, .header-hosting .hosting-header .hosting-header-wrap .block {
+    margin: auto;
+    text-align: center;
+  }
+  .header .hosting-header .hosting-header-wrap .img, .header-about .hosting-header .hosting-header-wrap .img, .header-service .hosting-header .hosting-header-wrap .img, .header-hosting .hosting-header .hosting-header-wrap .img {
     margin-top: 30px;
   }
   .newsletter .newsletter-wrap {
@@ -2868,16 +3329,22 @@ body {
   .footer .footer-wrap .right .social {
     margin-top: 30px;
   }
+  .hosting-steps .hosting-steps-wrap .block {
+    width: 100%;
+  }
+  .hosting-column .hosting-column-wrap .block {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 660px) {
-  .header .nav .top-header, .header-about .nav .top-header, .header-service .nav .top-header {
+  .header .nav .top-header, .header-about .nav .top-header, .header-service .nav .top-header, .header-hosting .nav .top-header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .header .nav .main-menu .registration, .header-about .nav .main-menu .registration, .header-service .nav .main-menu .registration {
+  .header .nav .main-menu .registration, .header-about .nav .main-menu .registration, .header-service .nav .main-menu .registration, .header-hosting .nav .main-menu .registration {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2890,7 +3357,7 @@ body {
     border-top: 1px solid #e1e9f2;
     padding: 10px 0;
   }
-  .header .nav .main-menu .registration .support, .header-about .nav .main-menu .registration .support, .header-service .nav .main-menu .registration .support {
+  .header .nav .main-menu .registration .support, .header-about .nav .main-menu .registration .support, .header-service .nav .main-menu .registration .support, .header-hosting .nav .main-menu .registration .support {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2900,52 +3367,52 @@ body {
     border-right: 1px solid #e1e9f2;
     padding-right: 10px;
   }
-  .header .nav .main-menu .registration .support h5, .header-about .nav .main-menu .registration .support h5, .header-service .nav .main-menu .registration .support h5 {
+  .header .nav .main-menu .registration .support h5, .header-about .nav .main-menu .registration .support h5, .header-service .nav .main-menu .registration .support h5, .header-hosting .nav .main-menu .registration .support h5 {
     letter-spacing: .14px;
     color: #484e57;
   }
-  .header .nav .main-menu .registration .support form, .header-about .nav .main-menu .registration .support form, .header-service .nav .main-menu .registration .support form {
+  .header .nav .main-menu .registration .support form, .header-about .nav .main-menu .registration .support form, .header-service .nav .main-menu .registration .support form, .header-hosting .nav .main-menu .registration .support form {
     margin-left: 5px;
     width: 150px;
   }
-  .header .nav .main-menu .registration .support form input, .header-about .nav .main-menu .registration .support form input, .header-service .nav .main-menu .registration .support form input {
+  .header .nav .main-menu .registration .support form input, .header-about .nav .main-menu .registration .support form input, .header-service .nav .main-menu .registration .support form input, .header-hosting .nav .main-menu .registration .support form input {
     color: #9ba4b0;
     width: 100%;
   }
-  .header .nav .main-menu .registration .support form input::-webkit-input-placeholder, .header-about .nav .main-menu .registration .support form input::-webkit-input-placeholder, .header-service .nav .main-menu .registration .support form input::-webkit-input-placeholder {
+  .header .nav .main-menu .registration .support form input::-webkit-input-placeholder, .header-about .nav .main-menu .registration .support form input::-webkit-input-placeholder, .header-service .nav .main-menu .registration .support form input::-webkit-input-placeholder, .header-hosting .nav .main-menu .registration .support form input::-webkit-input-placeholder {
     color: #9ba4b0;
   }
-  .header .nav .main-menu .registration .support form input:-ms-input-placeholder, .header-about .nav .main-menu .registration .support form input:-ms-input-placeholder, .header-service .nav .main-menu .registration .support form input:-ms-input-placeholder {
+  .header .nav .main-menu .registration .support form input:-ms-input-placeholder, .header-about .nav .main-menu .registration .support form input:-ms-input-placeholder, .header-service .nav .main-menu .registration .support form input:-ms-input-placeholder, .header-hosting .nav .main-menu .registration .support form input:-ms-input-placeholder {
     color: #9ba4b0;
   }
-  .header .nav .main-menu .registration .support form input::-ms-input-placeholder, .header-about .nav .main-menu .registration .support form input::-ms-input-placeholder, .header-service .nav .main-menu .registration .support form input::-ms-input-placeholder {
+  .header .nav .main-menu .registration .support form input::-ms-input-placeholder, .header-about .nav .main-menu .registration .support form input::-ms-input-placeholder, .header-service .nav .main-menu .registration .support form input::-ms-input-placeholder, .header-hosting .nav .main-menu .registration .support form input::-ms-input-placeholder {
     color: #9ba4b0;
   }
-  .header .nav .main-menu .registration .support form input::placeholder, .header-about .nav .main-menu .registration .support form input::placeholder, .header-service .nav .main-menu .registration .support form input::placeholder {
+  .header .nav .main-menu .registration .support form input::placeholder, .header-about .nav .main-menu .registration .support form input::placeholder, .header-service .nav .main-menu .registration .support form input::placeholder, .header-hosting .nav .main-menu .registration .support form input::placeholder {
     color: #9ba4b0;
   }
-  .header .nav .main-menu .registration .register, .header-about .nav .main-menu .registration .register, .header-service .nav .main-menu .registration .register {
+  .header .nav .main-menu .registration .register, .header-about .nav .main-menu .registration .register, .header-service .nav .main-menu .registration .register, .header-hosting .nav .main-menu .registration .register {
     margin-left: 10px;
     padding-right: 10px;
     border-right: 1px solid #e1e9f2;
   }
-  .header .nav .main-menu .registration .register a, .header-about .nav .main-menu .registration .register a, .header-service .nav .main-menu .registration .register a {
+  .header .nav .main-menu .registration .register a, .header-about .nav .main-menu .registration .register a, .header-service .nav .main-menu .registration .register a, .header-hosting .nav .main-menu .registration .register a {
     color: #9ba4b0;
     letter-spacing: .14px;
     display: inline-block;
   }
-  .header .nav .main-menu .registration .login, .header-about .nav .main-menu .registration .login, .header-service .nav .main-menu .registration .login {
+  .header .nav .main-menu .registration .login, .header-about .nav .main-menu .registration .login, .header-service .nav .main-menu .registration .login, .header-hosting .nav .main-menu .registration .login {
     margin-left: 10px;
   }
-  .header .nav .main-menu .registration .login a, .header-about .nav .main-menu .registration .login a, .header-service .nav .main-menu .registration .login a {
+  .header .nav .main-menu .registration .login a, .header-about .nav .main-menu .registration .login a, .header-service .nav .main-menu .registration .login a, .header-hosting .nav .main-menu .registration .login a {
     color: #9ba4b0;
     letter-spacing: .14px;
     display: inline-block;
   }
-  .header .header-slider-wrap .header-arrows-left, .header-about .header-slider-wrap .header-arrows-left, .header-service .header-slider-wrap .header-arrows-left {
+  .header .header-slider-wrap .header-arrows-left, .header-about .header-slider-wrap .header-arrows-left, .header-service .header-slider-wrap .header-arrows-left, .header-hosting .header-slider-wrap .header-arrows-left {
     display: none;
   }
-  .header .header-slider-wrap .header-arrows-right, .header-about .header-slider-wrap .header-arrows-right, .header-service .header-slider-wrap .header-arrows-right {
+  .header .header-slider-wrap .header-arrows-right, .header-about .header-slider-wrap .header-arrows-right, .header-service .header-slider-wrap .header-arrows-right, .header-hosting .header-slider-wrap .header-arrows-right {
     display: none;
   }
   .hosting .hosting-wrap .block {
@@ -3038,20 +3505,20 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  .header .nav .main-menu .registration, .header-about .nav .main-menu .registration, .header-service .nav .main-menu .registration {
+  .header .nav .main-menu .registration, .header-about .nav .main-menu .registration, .header-service .nav .main-menu .registration, .header-hosting .nav .main-menu .registration {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .header .nav .main-menu .registration .support, .header-about .nav .main-menu .registration .support, .header-service .nav .main-menu .registration .support {
+  .header .nav .main-menu .registration .support, .header-about .nav .main-menu .registration .support, .header-service .nav .main-menu .registration .support, .header-hosting .nav .main-menu .registration .support {
     border: none;
   }
-  .header .nav .main-menu .registration .register, .header-about .nav .main-menu .registration .register, .header-service .nav .main-menu .registration .register {
+  .header .nav .main-menu .registration .register, .header-about .nav .main-menu .registration .register, .header-service .nav .main-menu .registration .register, .header-hosting .nav .main-menu .registration .register {
     border: none;
     margin-top: 10px;
   }
-  .header .nav .main-menu .registration .login, .header-about .nav .main-menu .registration .login, .header-service .nav .main-menu .registration .login {
+  .header .nav .main-menu .registration .login, .header-about .nav .main-menu .registration .login, .header-service .nav .main-menu .registration .login, .header-hosting .nav .main-menu .registration .login {
     margin-top: 10px;
   }
 }

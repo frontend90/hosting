@@ -1,5 +1,5 @@
 @media screen and ( max-width: 1200px )
-  .header, .header-about, .header-service
+  .header, .header-about, .header-service, .header-hosting
     & .nav 
       & .main-menu 
         & .first-level
@@ -88,6 +88,19 @@
       & .right 
         margin-top: 30px 
         justify-content: space-around
+  .hosting-steps
+    & .hosting-steps-wrap
+      flex-wrap: wrap
+      margin-top: 0
+      & .block 
+        width: calc(50% - 30px)
+        margin-top: 30px 
+  .hosting-column
+    & .hosting-column-wrap
+      margin-top: 0
+      & .block 
+        width: calc(50% - 30px)
+        margin-top: 30px 
 @media screen and ( max-width: 930px )
   .benefits
     & .benefits-wrap
@@ -99,7 +112,7 @@
       & .block 
         width: 100%
 @media screen and ( max-width: 900px )
-  .header, .header-about, .header-service
+  .header, .header-about, .header-service, .header-hosting
     & .nav 
       & .top-header
         flex-direction: row
@@ -178,6 +191,14 @@
           text-align: center
         & .img 
           margin-top: 30px 
+    & .hosting-header
+      & .hosting-header-wrap
+        flex-direction: column 
+        & .block 
+          margin: auto
+          text-align: center
+        & .img 
+          margin-top: 30px 
   .newsletter
     & .newsletter-wrap
       flex-direction: column 
@@ -236,8 +257,16 @@
           margin-top: 30px 
         & .social 
           margin-top: 30px 
+  .hosting-steps
+    & .hosting-steps-wrap
+      & .block 
+        width: 100%
+  .hosting-column
+    & .hosting-column-wrap
+      & .block 
+        width: 100%
 @media screen and ( max-width: 660px )
-  .header, .header-about, .header-service
+  .header, .header-about, .header-service, .header-hosting
     & .nav 
       & .top-header 
         flex-direction: row
@@ -353,7 +382,7 @@
             & .each 
               text-align: center 
 @media screen and ( max-width: 400px )
-  .header, .header-about, .header-service
+  .header, .header-about, .header-service, .header-hosting
     & .nav 
       & .main-menu
         & .registration 

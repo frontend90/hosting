@@ -1,0 +1,56 @@
+.hosting-steps
+  padding: 60px 0 100px 0 
+  & .title  
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: -10px 
+      width: 20px 
+      height: 2px 
+      background: #fb6b45
+    & h6 
+      text-transform: uppercase
+      font-size: 18px 
+          color: #859aa1
+          letter-spacing: .45px 
+    & h4 
+      text-transform: uppercase
+      font-size: 30px 
+      +extra 
+      color: #556b72
+      letter-spacing: -.75px 
+      line-height: 31px 
+  & .hosting-steps-wrap
+    margin-top: 30px 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      width: calc(33.3% - 30px)
+      display: flex 
+      & .icon 
+        background: #fb6b45
+        min-width: 68px 
+        height: 58px 
+        display: flex 
+        align-items: center
+        justify-content: center
+        & span 
+          color: #ffffff
+          +extra 
+          font-size: 30px 
+          letter-spacing: -.75px 
+      & .content 
+        margin-left: 30px 
+        margin-top: 20px 
+        & h6 
+          text-transform: uppercase
+          font-size: 14px 
+          +extra 
+          color: #556b72
+          letter-spacing: .7px 
+        & p 
+          margin-top: 10px 
+          line-height: 24px 
+          letter-spacing: .14px 
