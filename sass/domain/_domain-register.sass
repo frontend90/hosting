@@ -1,0 +1,169 @@
+.domain-register
+  padding: 60px 0 100px 0 
+  & .title 
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: -10px 
+      width: 20px 
+      height: 2px 
+      background: #fb6b45
+    & h6 
+      text-transform: uppercase
+      font-size: 18px 
+      color: #859aa1
+      letter-spacing: .45px 
+    & h4 
+      text-transform: uppercase
+      font-size: 30px 
+      +extra 
+      color: #556b72
+      letter-spacing: -.75px 
+      line-height: 31px 
+  & .domain-form
+    margin-top: 30px 
+    & form
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      & .input 
+        width: 555px
+        height: 55px
+        & input 
+          width: 100%
+          height: 100%
+          border: 1px solid #dfeef3
+          background: #ffffff
+          padding-left: 25px 
+          letter-spacing: .14px
+          color: #a0a9b6
+          &::placeholder 
+            color: #a0a9b6
+      & .select 
+        width: 175px 
+        height: 55px 
+        position: relative
+        &::before 
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          +solid 
+          right: 15px 
+          font-size: 16px 
+          color: #525e6d
+          z-index: 1
+          display: block 
+        & select 
+          width: 100%
+          height: 100%
+          background: #ffffff
+          border: 1px solid #dfeef3
+          letter-spacing: .14px 
+          color: #a0a9b6
+          padding-left: 25px 
+          appearance: none
+          display: block 
+      & .btn
+        & button 
+          width: 175px 
+          height: 55px
+          background: #ff8261
+          text-transform: uppercase
+          +bold 
+          color: #ffffff
+          letter-spacing: 1.4px 
+          transition: .3s linear 
+          &:hover
+            transform: scale(1.05) 
+  & .domain-other
+    margin-top: 55px 
+    & h6 
+      text-transform: uppercase
+      +extra 
+      font-size: 14px 
+      color: #556b72
+      letter-spacing: .7px 
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        width: 20px 
+        height: 2px 
+        background: #fb6b45
+        top: -10px
+    & .domain-other-wrap
+      display: flex 
+      justify-content: space-between
+      margin-top: 25px 
+      & .block 
+        width: calc(50% - 30px)
+      & .left 
+        & .img 
+          background: #e7f4f8
+          text-transform: uppercase
+          +extra 
+          display: flex 
+          align-items: center
+          justify-content: center
+          color: #9aaeb7
+          height: 100%
+          min-height: 150px 
+          & img 
+            width: 100%
+            display: block 
+      & .domain-other-slider
+        position: relative
+        & .slick-list 
+          overflow: hidden
+          & .slick-track 
+            display: flex 
+            & .domain-other-slider-block
+              & .block-slider 
+                display: flex 
+                justify-content: space-between
+                border: 1px solid #d4e8ee
+                padding: 15px 20px 
+                & .box 
+                  & .name 
+                    text-transform: uppercase
+                    +semi 
+                    color: #556b72
+                    letter-spacing: 1.4px 
+                    line-height: 1 
+                  & .value 
+                    +light 
+                    color: #556b72
+                    font-size: 30px
+                    line-height: 1 
+                    & span 
+                      +extra 
+              & .block-bottom 
+                border-top: none 
+        & .slick-dots 
+          display: flex 
+          align-items: center
+          position: absolute
+          right: 0
+          top: -35px 
+          & li 
+            list-style: none 
+            margin-left: 5px 
+            &:first-of-type
+              margin-left: 0
+            & button 
+              font-size: 0
+              border: 2px solid #ccdee3
+              border-radius: 50%
+              width: 13px 
+              height: 13px 
+          & .slick-active 
+            & button 
+              border-color: #52cbf8
+
+
+    

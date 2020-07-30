@@ -123,6 +123,23 @@ $('.register-modal p a').click(function () {
   $('.register-modal').removeClass('show');
 });
 
+/*************       domain-other  slick       ************/
+$('.domain-other-slider').slick({
+  arrows: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  dots: true,
+  autoplay: true,
+  speed: 1000,
+  responsive: [{
+    breakpoint: 801,
+    settings: {
+      dots: false
+    }
+  }]
+});
+
 /*************       service-clients  slick       ************/
 $('.service-clients-slider').slick({
   arrows: false,
