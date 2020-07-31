@@ -1,0 +1,82 @@
+.faq-faqs
+  padding: 60px 0 80px 0 
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: 1170px 
+    height: 1px 
+    background: #d3e5eb
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+  & .title 
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: -10px 
+      width: 20px 
+      height: 2px 
+      background: #fb6b45
+    & h6 
+      text-transform: uppercase
+      font-size: 18px 
+      color: #859aa1
+      letter-spacing: .45px 
+    & h4 
+      text-transform: uppercase
+      font-size: 30px 
+      +extra 
+      color: #556b72
+      letter-spacing: -.75px 
+      line-height: 31px 
+  & .faq-faqs-wrap
+    display: flex 
+    justify-content: space-between
+    flex-wrap: wrap
+    & .block 
+      width: calc(50% - 30px)
+      display: flex 
+      margin-top: 50px 
+      & .icon 
+        background: #ff8261
+        min-width: 67px 
+        height: 67px 
+        color: #ffffff
+        text-transform: uppercase
+        font-size: 30px 
+        +extra 
+        letter-spacing: -.75px 
+        display: flex 
+        align-items: center
+        justify-content: center
+      & .content 
+        margin-left: 30px 
+        margin-top: 30px 
+        & h6 
+          text-transform: uppercase
+          +extra 
+          font-size: 14px 
+          color: #556b72
+          letter-spacing: .7px 
+        & p 
+          margin-top: 10px 
+          line-height: 24px 
+          letter-spacing: .14px 
+  & .btn
+    display: flex 
+    justify-content: center
+    margin-top: 80px  
+    & button 
+      text-transform: uppercase
+      background: #ff8261
+      height: 55px 
+      width: 380px 
+      color: #ffffff
+      +bold 
+      letter-spacing: 1.4px 
+      transition: .3s linear 
+      &:hover
+        transform: scale(1.05)

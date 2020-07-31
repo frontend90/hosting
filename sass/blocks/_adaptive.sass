@@ -1,5 +1,5 @@
 @media screen and ( max-width: 1200px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq
     & .nav 
       & .main-menu 
         & .first-level
@@ -37,6 +37,18 @@
   .login-modal
     & .login-block
       width: 50%
+  .faq-faqs
+    &::before
+      width: 100%
+  .faq-questions
+    & .faq-questions-form
+      & form 
+        & .input-wrap
+          flex-direction: column 
+          & .input 
+            width: 100%
+        & .input 
+          width: 100%
 @media screen and ( max-width: 1110px )
   .about-offers
     & .about-offers-wrap
@@ -121,7 +133,7 @@
       & .block 
         width: 100%
 @media screen and ( max-width: 900px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq
     & .nav 
       & .top-header
         flex-direction: row
@@ -216,6 +228,14 @@
           text-align: center
         & .img 
           margin-top: 30px 
+    & .faq-header
+      & .faq-header-wrap
+        flex-direction: column 
+        & .block 
+          margin: auto
+          text-align: center
+        & .img 
+          margin-top: 30px 
   .newsletter
     & .newsletter-wrap
       flex-direction: column 
@@ -260,6 +280,11 @@
           width: 100%
         & .domain-other-slider
           margin-top: 30px  
+  .faq-faqs
+    & .faq-faqs-wrap
+      flex-direction: column 
+      & .block 
+        width: 100%
 @media screen and ( max-width: 770px )
   .offer
     & .offer-wrap 
@@ -292,7 +317,7 @@
       & .block 
         width: 100%
 @media screen and ( max-width: 660px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq
     & .nav 
       & .top-header 
         flex-direction: row
@@ -420,7 +445,7 @@
             & .each 
               text-align: center 
 @media screen and ( max-width: 400px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq
     & .nav 
       & .main-menu
         & .registration 
@@ -432,3 +457,14 @@
             margin-top: 10px 
           & .login 
             margin-top: 10px 
+  .faq-faqs
+    & .faq-faqs-wrap
+      & .block 
+        flex-direction: column 
+        & .icon 
+          width: 67px 
+        & .content 
+          margin-left: 0
+    & .btn 
+      & button 
+        width: 100%

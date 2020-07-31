@@ -156,3 +156,13 @@ $('.service-clients-slider').slick({
     }
   }]
 });
+
+/************   input animation    *************/
+$(".input input").focus(function () {
+  $(this).next("p").addClass("active");
+});
+$(".input input").blur(function () {
+  if ($(this).val() === "") {
+    $(this).next("p").removeClass("active");
+  }
+});
