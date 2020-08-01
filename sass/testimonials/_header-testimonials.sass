@@ -1,0 +1,119 @@
+.header-testimonials
+  & .nav 
+    & .top-header 
+      display: flex 
+      align-items: center
+      justify-content: space-between
+      padding: 20px 15px 
+      & .logo 
+        display: flex 
+        align-items: center
+        & img 
+          width: 100%
+        & h2 
+          text-transform: uppercase
+          margin-left: 10px 
+          +extra 
+          font-size: 20px 
+          color: #161920
+          letter-spacing: -0.1px
+      & .registration 
+        display: flex 
+        align-items: center
+        border-top: 1px solid #e1e9f2
+        border-bottom: 1px solid #e1e9f2
+        padding: 10px 0 
+        & .support 
+          display: flex 
+          align-items: center
+          border-right: 1px solid #e1e9f2
+          padding-right: 10px 
+          & h5 
+            letter-spacing: .14px 
+            color: #484e57
+          & form 
+            margin-left: 5px 
+            width: 160px
+            & input 
+              color: #9ba4b0
+              width: 100%
+              padding-left: 0px 
+              &::placeholder 
+                color: #9ba4b0
+        & .register
+          margin-left: 10px
+          padding-right: 10px 
+          border-right: 1px solid #e1e9f2 
+          & a 
+            color: #9ba4b0
+            letter-spacing: .14px 
+            display: inline-block
+        & .login 
+          margin-left: 10px 
+          & a 
+            color: #9ba4b0
+            letter-spacing: .14px  
+            display: inline-block
+    & .main-menu
+      & .burger 
+        display: none 
+      & .first-level
+        display: flex 
+        justify-content: space-between
+        list-style: none 
+        background: #ff8261
+        & li 
+          position: relative
+          & a 
+            text-transform: uppercase
+            color: #ffffff
+            font-size: 13px 
+            letter-spacing: 1.04px 
+            display: inline-block
+            line-height: 40px
+            transition: .3s linear 
+            background: #ff8261
+            padding: 0 25.2px 
+            white-space: nowrap
+            &:hover
+              background: #52cbf8
+            &.active 
+              background: #52cbf8
+        & .second-level 
+          list-style: none
+          position: absolute
+          background: #ff8261
+          left: 0
+          top: 40px
+          z-index: 20
+          display: none 
+          & li 
+            & a 
+              white-space: nowrap
+              display: inline-block
+              padding: 0 10px 
+  & .testimonials-header
+    background: #222836
+    padding: 100px 0 
+    & .testimonials-header-wrap
+      display: flex 
+      align-items: center
+      & .block 
+        & h4 
+          text-transform: uppercase
+          +extra 
+          font-size: 40px 
+          color: #ffffff
+          letter-spacing: 1px 
+          line-height: 1
+        & h6 
+          text-transform: uppercase
+          color: #ffffff
+          letter-spacing: 1.9px 
+          font-size: 20px 
+          +light
+      & .img 
+        text-transform: uppercase
+        +extra 
+        color: #9aaeb7
+        margin-left: 315px 

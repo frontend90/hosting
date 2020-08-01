@@ -166,3 +166,10 @@ $(".input input").blur(function () {
     $(this).next("p").removeClass("active");
   }
 });
+
+/************   masonry     **************/
+$('.testimonials-clients-wrap').masonry({
+  itemSelector: '.block',
+  gutter: 30,
+  percentPosition: true
+});

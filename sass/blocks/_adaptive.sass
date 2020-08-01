@@ -1,5 +1,5 @@
 @media screen and ( max-width: 1200px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials
     & .nav 
       & .main-menu 
         & .first-level
@@ -132,8 +132,12 @@
       flex-direction: column 
       & .block 
         width: 100%
+  .testimonials-clients
+    & .testimonials-clients-wrap
+      & .block 
+        width: calc(50% - 30px)
 @media screen and ( max-width: 900px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials
     & .nav 
       & .top-header
         flex-direction: row
@@ -236,6 +240,14 @@
           text-align: center
         & .img 
           margin-top: 30px 
+    & .testimonials-header
+      & .testimonials-header-wrap
+        flex-direction: column 
+        & .block 
+          margin: auto
+          text-align: center
+        & .img 
+          margin-top: 30px 
   .newsletter
     & .newsletter-wrap
       flex-direction: column 
@@ -317,7 +329,7 @@
       & .block 
         width: 100%
 @media screen and ( max-width: 660px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials
     & .nav 
       & .top-header 
         flex-direction: row
@@ -399,6 +411,10 @@
         align-items: normal
         & .input 
           width: 100% 
+  .testimonials-clients
+    & .testimonials-clients-wrap
+      & .block 
+        width: 100%
 @media screen and ( max-width: 570px )
   .about-team
     & .about-team-wrap
@@ -445,7 +461,7 @@
             & .each 
               text-align: center 
 @media screen and ( max-width: 400px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials
     & .nav 
       & .main-menu
         & .registration 
@@ -468,3 +484,10 @@
     & .btn 
       & button 
         width: 100%
+@media screen and ( max-width: 350px )
+  .header-testimonials
+    & .testimonials-header
+      & .testimonials-header-wrap
+        & .block 
+          & h4 
+            font-size: 35px 

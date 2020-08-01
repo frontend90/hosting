@@ -1,0 +1,79 @@
+.testimonials-clients
+  padding: 60px 0 150px 0 
+  & .title 
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: -10px 
+      width: 20px 
+      height: 2px 
+      background: #fb6b45
+    & h6 
+      text-transform: uppercase
+      font-size: 18px 
+      color: #859aa1
+      letter-spacing: .45px 
+    & h4 
+      text-transform: uppercase
+      font-size: 30px 
+      +extra 
+      color: #556b72
+      letter-spacing: -.75px 
+      line-height: 31px 
+  & .testimonials-clients-wrap
+    display: flex 
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    & .block 
+      border: 1px solid #d3e5eb
+      width: calc(33.3% - 30px) 
+      padding: 60px 30px 40px 40px   
+      margin-top: 55px 
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        +solid 
+        top: calc(-45px / 2)
+        left: 40px
+        border: 1px solid #d3e5eb
+        z-index: 2
+        width: 55px 
+        height: 45px 
+        display: flex 
+        align-items: center
+        justify-content: center
+        font-size: 24px 
+        color: #ff8261 
+        background: #ffffff
+      & p 
+        line-height: 24px 
+        letter-spacing: .14px 
+      & .name-wrap
+        margin-top: 30px 
+        display: flex 
+        align-items: center
+        & .icon 
+          width: 56px 
+          height: 56px 
+          background: #000000
+          border-radius: 50%
+          & img 
+            display: block 
+            width: 100%
+        & .content 
+          margin-left: 15px 
+          & p 
+            text-transform: uppercase
+            color: #556b72
+            letter-spacing: .7px 
+          & h6 
+            +extra 
+            color: #556b72
+            font-size: 14px 
+            letter-spacing: .7px 
+            text-transform: uppercase
+            line-height: 1
