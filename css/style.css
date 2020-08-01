@@ -828,6 +828,155 @@ body {
   border-color: #52cbf8;
 }
 
+.faq-questions {
+  padding: 70px 0 100px 0;
+}
+
+.faq-questions .title {
+  position: relative;
+}
+
+.faq-questions .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 20px;
+  height: 2px;
+  background: #fb6b45;
+}
+
+.faq-questions .title h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #859aa1;
+  letter-spacing: .45px;
+}
+
+.faq-questions .title h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: -.75px;
+  line-height: 31px;
+}
+
+.faq-questions .faq-questions-form {
+  margin-top: 30px;
+}
+
+.faq-questions .faq-questions-form form {
+  width: 100%;
+}
+
+.faq-questions .faq-questions-form form .input-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq-questions .faq-questions-form form .input-wrap .input {
+  width: 555px;
+  height: 60px;
+  position: relative;
+}
+
+.faq-questions .faq-questions-form form .input-wrap .input input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d3e5eb;
+  padding-left: 20px;
+}
+
+.faq-questions .faq-questions-form form .input-wrap .input p {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+  letter-spacing: .14px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.faq-questions .faq-questions-form form .input-wrap .input p.active {
+  top: 0;
+  padding: 0 5px;
+  background: #ffffff;
+}
+
+.faq-questions .faq-questions-form form .input-wrap .input p span {
+  color: #ff8261;
+}
+
+.faq-questions .faq-questions-form form .input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.faq-questions .faq-questions-form form .input input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #d3e5eb;
+  padding-left: 20px;
+}
+
+.faq-questions .faq-questions-form form .input p {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+  letter-spacing: .14px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.faq-questions .faq-questions-form form .input p.active {
+  top: 0;
+  padding: 0 5px;
+  background: #ffffff;
+}
+
+.faq-questions .faq-questions-form form .input p span {
+  color: #ff8261;
+}
+
+.faq-questions .faq-questions-form form .textarea {
+  height: 200px;
+}
+
+.faq-questions .faq-questions-form form .textarea p {
+  top: 20px;
+}
+
+.faq-questions .faq-questions-form form .btn {
+  margin-top: 20px;
+}
+
+.faq-questions .faq-questions-form form .btn button {
+  background: #ff8261;
+  width: 160px;
+  height: 55px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 1.4px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.faq-questions .faq-questions-form form .btn button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .header {
   height: 100vh;
 }
@@ -3857,155 +4006,6 @@ body {
 }
 
 .faq-faqs .btn button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.faq-questions {
-  padding: 70px 0 100px 0;
-}
-
-.faq-questions .title {
-  position: relative;
-}
-
-.faq-questions .title::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: -10px;
-  width: 20px;
-  height: 2px;
-  background: #fb6b45;
-}
-
-.faq-questions .title h6 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: #859aa1;
-  letter-spacing: .45px;
-}
-
-.faq-questions .title h4 {
-  text-transform: uppercase;
-  font-size: 30px;
-  font-family: 'OpenSans-ExtraBold';
-  color: #556b72;
-  letter-spacing: -.75px;
-  line-height: 31px;
-}
-
-.faq-questions .faq-questions-form {
-  margin-top: 30px;
-}
-
-.faq-questions .faq-questions-form form {
-  width: 100%;
-}
-
-.faq-questions .faq-questions-form form .input-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.faq-questions .faq-questions-form form .input-wrap .input {
-  width: 555px;
-  height: 60px;
-  position: relative;
-}
-
-.faq-questions .faq-questions-form form .input-wrap .input input {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #d3e5eb;
-  padding-left: 20px;
-}
-
-.faq-questions .faq-questions-form form .input-wrap .input p {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 20px;
-  letter-spacing: .14px;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
-}
-
-.faq-questions .faq-questions-form form .input-wrap .input p.active {
-  top: 0;
-  padding: 0 5px;
-  background: #ffffff;
-}
-
-.faq-questions .faq-questions-form form .input-wrap .input p span {
-  color: #ff8261;
-}
-
-.faq-questions .faq-questions-form form .input {
-  width: 100%;
-  height: 60px;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.faq-questions .faq-questions-form form .input input {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #d3e5eb;
-  padding-left: 20px;
-}
-
-.faq-questions .faq-questions-form form .input p {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 20px;
-  letter-spacing: .14px;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
-}
-
-.faq-questions .faq-questions-form form .input p.active {
-  top: 0;
-  padding: 0 5px;
-  background: #ffffff;
-}
-
-.faq-questions .faq-questions-form form .input p span {
-  color: #ff8261;
-}
-
-.faq-questions .faq-questions-form form .textarea {
-  height: 200px;
-}
-
-.faq-questions .faq-questions-form form .textarea p {
-  top: 20px;
-}
-
-.faq-questions .faq-questions-form form .btn {
-  margin-top: 20px;
-}
-
-.faq-questions .faq-questions-form form .btn button {
-  background: #ff8261;
-  width: 160px;
-  height: 55px;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-family: 'OpenSans-Bold';
-  letter-spacing: 1.4px;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
-}
-
-.faq-questions .faq-questions-form form .btn button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
