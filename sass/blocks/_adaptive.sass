@@ -1,5 +1,5 @@
 @media screen and ( max-width: 1200px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog
     & .nav 
       & .main-menu 
         & .first-level
@@ -137,7 +137,7 @@
       & .block 
         width: calc(50% - 30px)
 @media screen and ( max-width: 900px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog
     & .nav 
       & .top-header
         flex-direction: row
@@ -248,6 +248,14 @@
           text-align: center
         & .img 
           margin-top: 30px 
+    & .blog-header
+      & .blog-header-wrap
+        flex-direction: column 
+        & .block 
+          margin: auto
+          text-align: center
+        & .img 
+          margin-top: 30px 
   .newsletter
     & .newsletter-wrap
       flex-direction: column 
@@ -329,7 +337,7 @@
       & .block 
         width: 100%
 @media screen and ( max-width: 660px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog
     & .nav 
       & .top-header 
         flex-direction: row
@@ -447,6 +455,27 @@
         & form 
           & .input 
             width: 100%
+  .blog-pagination
+    & .pagination
+      & .contents 
+        & .pagination-block
+          & .block 
+            & .block-content 
+              & .info-social-wrap
+                flex-direction: column 
+                align-items: flex-start
+                & .info-block 
+                  & .social 
+                    margin-left: 0
+                & .comments
+                  border-right: none 
+                & .like 
+                  border-right: none 
+                  margin-left: 0
+                  margin-top: 10px 
+                & .share 
+                  margin-left: 0
+                  margin-top: 10px 
 @media screen and ( max-width: 420px )
   .offer
     & .offer-wrap 
@@ -461,7 +490,7 @@
             & .each 
               text-align: center 
 @media screen and ( max-width: 400px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog
     & .nav 
       & .main-menu
         & .registration 

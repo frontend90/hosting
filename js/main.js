@@ -1,3 +1,9 @@
+/*************  pagination   ****************/
+$('.pagination').pagination({
+  items: 1,
+  contents: 'contents'
+});
+
 /**********   active menu    *****************/
 $(function () {
   $('.first-level li a').each(function () {
