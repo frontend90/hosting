@@ -1,5 +1,6 @@
-.blog-pagination
+.blog-post-pagination
   padding: 60px 0 100px 0 
+  position: relative
   & .title 
     position: relative
     &::before
@@ -27,7 +28,6 @@
     & .contents
       & .pagination-block
         & .block 
-          margin-bottom: 60px 
           & .img 
             background: #d4d3ec
             width: 100%
@@ -60,19 +60,6 @@
               margin-top: 25px
               line-height: 24px 
               letter-spacing: .14px  
-            & .btn 
-              margin-top: 35px 
-              & button 
-                background: #ff8261
-                width: 160px 
-                height: 55px 
-                color: #ffffff
-                text-transform: uppercase
-                +bold 
-                letter-spacing: 1.4px 
-                transition: .3s linear 
-                &:hover
-                  transform: scale(1.05)
             & .info-social-wrap
               margin-top: 70px
               display: flex 
@@ -121,7 +108,12 @@
 #page-navi 
   margin: 0
   width: 100%
+  display: inline-flex
+  justify-content: flex-end
+  overflow: visible
+  height: 100%
   & li 
+    margin-top: -63px
     & a 
       padding: 7px 13px 
       border: 1px solid #d6e8ee
@@ -131,6 +123,8 @@
       color: #656d78
       font-size: 18px 
       letter-spacing: .18px 
+      margin-left: 10px
+      margin-right: 0 
     & a.current, a.disable, a:hover 
       border: 1px solid transparent 
       background: #ff8261

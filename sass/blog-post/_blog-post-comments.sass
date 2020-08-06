@@ -1,0 +1,82 @@
+.blog-post-comments
+  padding-bottom: 90px 
+  & .title 
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: -10px 
+      width: 20px 
+      height: 2px 
+      background: #fb6b45
+    & h6 
+      text-transform: uppercase
+      font-size: 18px 
+      color: #859aa1
+      letter-spacing: .45px 
+    & h4 
+      text-transform: uppercase
+      font-size: 30px 
+      +extra 
+      color: #556b72
+      letter-spacing: -.75px 
+      line-height: 31px 
+  & .blog-post-contents
+    margin-top: 30px 
+    & .contents-first-level
+      & li 
+        list-style: none 
+        padding: 30px 0  
+        border-bottom: 1px solid #deedf2
+        &:last-of-type
+          border: none 
+        & .block-wrap
+          display: flex 
+          & .icon 
+            background: #939997
+            min-width: 118px
+            height: 118px
+            border-radius: 50%
+            & img 
+              width: 100%
+              display: block 
+          & .content 
+            margin-left: 30px 
+            & .info-wrap
+              display: flex 
+              justify-content: space-between
+              & .author
+                & h6 
+                  text-transform: uppercase
+                  +extra 
+                  font-size: 14px 
+                  color: #556b72
+                  letter-spacing: .7px 
+                & p 
+                  letter-spacing: .14px 
+              & .btn 
+                & button 
+                  background: #ff8261
+                  width: 90px 
+                  height: 30px 
+                  color: #ffffff
+                  +bold 
+                  text-transform: uppercase
+                  font-size: 13px 
+                  letter-spacing: .65px 
+                  transition: .3s linear 
+                  &:hover
+                    transform: scale(1.05)
+            & .text
+              margin-top: 15px
+              line-height: 24px
+              letter-spacing: .14px 
+        & .contents-second-level
+          margin-left: 145px 
+          & li 
+            &:first-of-type
+              border-bottom: 1px solid #deedf2
+            &:last-of-type
+              border: none 
+              
