@@ -5370,6 +5370,173 @@ body {
   border: none;
 }
 
+.blog-post-comment {
+  padding: 70px 0 110px 0;
+  background: #e7f4f8;
+}
+
+.blog-post-comment .title .fas {
+  font-family: 'fa-solid-900';
+  font-size: 27px;
+  color: #fb6b45;
+}
+
+.blog-post-comment .title h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #859aa1;
+  letter-spacing: .45px;
+  margin-top: 5px;
+}
+
+.blog-post-comment .title h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'OpenSans-ExtraBold';
+  color: #556b72;
+  letter-spacing: -.75px;
+  line-height: 31px;
+}
+
+.blog-post-comment .form {
+  margin-top: 30px;
+}
+
+.blog-post-comment .form form {
+  width: 100%;
+}
+
+.blog-post-comment .form form .form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-post-comment .form form .form-wrap .block {
+  width: calc(50% - 30px);
+}
+
+.blog-post-comment .form form .form-wrap .block .input {
+  width: 100%;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+.blog-post-comment .form form .form-wrap .block .input:last-of-type {
+  margin-bottom: 0;
+}
+
+.blog-post-comment .form form .form-wrap .block .input input {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  padding-left: 25px;
+  letter-spacing: .14px;
+}
+
+.blog-post-comment .form form .form-wrap .block .input input::-webkit-input-placeholder {
+  letter-spacing: .14px;
+}
+
+.blog-post-comment .form form .form-wrap .block .input input:-ms-input-placeholder {
+  letter-spacing: .14px;
+}
+
+.blog-post-comment .form form .form-wrap .block .input input::-ms-input-placeholder {
+  letter-spacing: .14px;
+}
+
+.blog-post-comment .form form .form-wrap .block .input input::placeholder {
+  letter-spacing: .14px;
+}
+
+.blog-post-comment .form form .form-wrap .block .textarea {
+  width: 100%;
+  height: 185px;
+}
+
+.blog-post-comment .form form .form-wrap .block .textarea input {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  padding-left: 25px;
+  padding-right: 25px;
+  letter-spacing: .14px;
+}
+
+.blog-post-comment .form form .form-wrap .block .textarea input::-webkit-input-placeholder {
+  letter-spacing: .14px;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+.blog-post-comment .form form .form-wrap .block .textarea input:-ms-input-placeholder {
+  letter-spacing: .14px;
+  transform: translateY(-60px);
+}
+
+.blog-post-comment .form form .form-wrap .block .textarea input::-ms-input-placeholder {
+  letter-spacing: .14px;
+  transform: translateY(-60px);
+}
+
+.blog-post-comment .form form .form-wrap .block .textarea input::placeholder {
+  letter-spacing: .14px;
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+.blog-post-comment .form form .btn {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.blog-post-comment .form form .btn button {
+  background: #ff8261;
+  width: 195px;
+  height: 55px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'OpenSans-Bold';
+  letter-spacing: 1.4px;
+  -webkit-animation: slidein 3s ease-in-out infinite;
+          animation: slidein 3s ease-in-out infinite;
+}
+
+@-webkit-keyframes slidein {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 20px #a0a9b6;
+            box-shadow: 0 0 20px #a0a9b6;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-box-shadow: 0 0 20px #a0a9b6;
+            box-shadow: 0 0 20px #a0a9b6;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .header .nav .main-menu .first-level, .header-about .nav .main-menu .first-level, .header-service .nav .main-menu .first-level, .header-hosting .nav .main-menu .first-level, .header-domain .nav .main-menu .first-level, .header-faq .nav .main-menu .first-level, .header-testimonials .nav .main-menu .first-level, .header-blog .nav .main-menu .first-level, .header-blog-post .nav .main-menu .first-level {
     padding: 0 10px;
@@ -5788,6 +5955,24 @@ body {
   }
   .blog-post-comments .blog-post-contents .contents-first-level li .contents-second-level li:first-of-type {
     border: none;
+  }
+  .blog-post-comment .form form .form-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-post-comment .form form .form-wrap .block {
+    margin: auto;
+    width: 100%;
+  }
+  .blog-post-comment .form form .form-wrap .block .textarea {
+    margin-top: 10px;
+  }
+  .blog-post-comment .form form .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
