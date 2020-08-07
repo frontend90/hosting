@@ -1,5 +1,5 @@
 @media screen and ( max-width: 1200px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support
     & .nav 
       & .main-menu 
         & .first-level
@@ -49,6 +49,13 @@
             width: 100%
         & .input 
           width: 100%
+  .support-faq
+    & .support-faq-wrap
+      flex-wrap: wrap
+      & .block 
+        width: calc(50% - 30px)
+      & .block-forum 
+        margin-top: 50px 
 @media screen and ( max-width: 1110px )
   .about-offers
     & .about-offers-wrap
@@ -137,7 +144,7 @@
       & .block 
         width: calc(50% - 30px)
 @media screen and ( max-width: 900px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support
     & .nav 
       & .top-header
         flex-direction: row
@@ -264,6 +271,14 @@
           text-align: center
         & .img 
           margin-top: 30px 
+    & .support-header
+      & .support-header-wrap
+        flex-direction: column 
+        & .block 
+          margin: auto
+          text-align: center
+        & .img 
+          margin-top: 30px 
   .newsletter
     & .newsletter-wrap
       flex-direction: column 
@@ -379,8 +394,24 @@
       & .content 
         margin-left: 0
         margin-top: 30px 
+  .support-search
+    & .form 
+      & form 
+        flex-direction: column 
+        & .input 
+          width: 100%
+          & input 
+            border-right: 1px solid #d3e5eb
+        & .btn 
+          margin-top: 30px 
+  .support-faq
+    padding: 30px 0 100px 0 
+    & .support-faq-wrap
+      & .block 
+        width: 100%
+        margin-top: 50px
 @media screen and ( max-width: 660px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support
     & .nav 
       & .top-header 
         flex-direction: row
@@ -567,7 +598,7 @@
             & .each 
               text-align: center 
 @media screen and ( max-width: 400px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support
     & .nav 
       & .main-menu
         & .registration 
@@ -590,6 +621,14 @@
     & .btn 
       & button 
         width: 100%
+  .support-search
+    & .form 
+      & form 
+        & .input 
+          & input 
+            padding-left: 10px 
+          & .fas 
+            display: none 
 @media screen and ( max-width: 350px )
   .header-testimonials
     & .testimonials-header

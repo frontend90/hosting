@@ -1,0 +1,75 @@
+.support-faq
+  padding: 80px 0 100px 0 
+  background: #e7f4f8
+  & .support-faq-wrap
+    display: flex 
+    justify-content: space-between
+    & .block
+      width: calc(33.3% - 30px)
+      & .block-title
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          background: #fb6b45
+          width: 20px 
+          height: 2px 
+          left: 0
+          top: -10px 
+        & h6 
+          text-transform: uppercase
+          +extra 
+          font-size: 14px 
+          color: #556b72
+          letter-spacing: .7px 
+        & p
+          letter-spacing: .14px 
+      & .content 
+        margin-top: 30px 
+        & p 
+          letter-spacing: .14px 
+          line-height: 36px 
+          position: relative
+          padding-left: 20px 
+          &::before
+            content: ''
+            +solid 
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            color: #fb6b45
+            font-size: 10px 
+      & .btn 
+        margin-top: 20px 
+        & button
+          background: #ff8261
+          width: 110px 
+          height: 45px 
+          color: #ffffff
+          text-transform: uppercase
+          +bold 
+          letter-spacing: 1.4px 
+          transition: .3s linear 
+          &:hover
+            transform: scale(1.05)
+      & .block-content 
+        margin-top: 30px 
+        & .box 
+          display: flex 
+          margin-bottom: 25px 
+          &:last-of-type
+            margin-bottom: 0
+          & .img 
+            background: #8cb1bd
+            min-width: 75px 
+            height: 65px 
+            & img 
+              width: 100%
+              display: block 
+          & p 
+            margin-left: 20px 
+            line-height: 24px 
+            letter-spacing: .14px 
+      & .last-btn 
+        margin-top: 47px  
