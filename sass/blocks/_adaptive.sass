@@ -1,5 +1,5 @@
 @media screen and ( max-width: 1200px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support, .header-contact
     & .nav 
       & .main-menu 
         & .first-level
@@ -129,6 +129,13 @@
       & .block 
         width: calc(50% - 30px)
         margin-top: 30px 
+  .contact-form
+    & .contact-form-wrap
+      flex-direction: column 
+      & .block 
+        width: 100%
+      & .form 
+        margin-top: 50px 
 @media screen and ( max-width: 930px )
   .benefits
     & .benefits-wrap
@@ -144,7 +151,7 @@
       & .block 
         width: calc(50% - 30px)
 @media screen and ( max-width: 900px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support, .header-contact
     & .nav 
       & .top-header
         flex-direction: row
@@ -273,6 +280,14 @@
           margin-top: 30px 
     & .support-header
       & .support-header-wrap
+        flex-direction: column 
+        & .block 
+          margin: auto
+          text-align: center
+        & .img 
+          margin-top: 30px 
+    & .contact-header
+      & .contact-header-wrap
         flex-direction: column 
         & .block 
           margin: auto
@@ -411,7 +426,7 @@
         width: 100%
         margin-top: 50px
 @media screen and ( max-width: 660px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support, .header-contact
     & .nav 
       & .top-header 
         flex-direction: row
@@ -534,6 +549,15 @@
       flex-wrap: wrap
       & .block 
         width: 100%
+@media screen and ( max-width: 490px )
+  .contact-form
+    & .contact-form-wrap
+      & .block 
+        width: 100%
+        & .contact-info-wrap
+          flex-direction: column 
+          & .box 
+            width: 100%
 @media screen and ( max-width: 480px )
   .search-block
     & .search-block-wrap 
@@ -598,7 +622,7 @@
             & .each 
               text-align: center 
 @media screen and ( max-width: 400px )
-  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support
+  .header, .header-about, .header-service, .header-hosting, .header-domain, .header-faq, .header-testimonials, .header-blog, .header-blog-post, .header-support, .header-contact
     & .nav 
       & .main-menu
         & .registration 
